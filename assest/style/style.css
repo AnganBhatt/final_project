@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray-–-900: #1a1a1a;
+    --gray-scale-gray-–-800: #333;
+    --gray-scale-gray-–-700: #4d4d4d;
+    --gray-scale-gray-–-600: #666;
+    --gray-scale-gray-–-500: #808080;
+    --gray-scale-gray-–-400: #999;
+    --gray-scale-gray-–-300: #b3b3b3;
+    --gray-scale-gray-–-200: #ccc;
+    --gray-scale-gray-–-100: #e6e6e6;
+    --gray-scale-gray-–-50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+}
+
+/* ============header-csss===================== */
+.head-top {
+    padding: 10px 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    background: var(--gray-scale-white);
+}
+
+.head-top-right-selection select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+
+.head-top-right-selection option {
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+
+}
+
+
+.head-mid {
+    padding: 24px 0px;
+}
+
+.search-input {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 6px;
+    width: 498px;
+    height: 45px;
+    outline: none;
+}
+
+.btn-search {
+    border-radius: 0 6px 6px 0;
+    padding: 14px 24px;
+    width: 98px;
+    height: 45px;
+    background: var(--branding-success);
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+}
+
+.navbar {
+    padding: 16px 0;
+    width: 100%;
+    height: 60px;
+    background: var(--gray-scale-gray-–-800) !important;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-400);
+}
+
+.nav-link .active {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+}
+
+/* =====================================================main================================================= */
+
+/* ==========bannar========= */
+
+.service .container {
+    border-radius: 8px;
+    padding: 40px;
+    width: 1320px;
+    min-height: 128px;
+    box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
+    background: var(--gray-scale-white);
+}
+
+.service h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.service P {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-400);
+}
+
+/* ==============categories-css=============== */
+.Categories-head h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.Categories-head a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--branding-success);
+}
+
+.categories-card .card {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 5px;
+    padding: 16px 0px 24px;
+    width: 200px;
+    height: 213px;
+    background: var(--gray-scale-white);
+}
+
+
+.categories-card h5 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.categories-card .card:hover {
+    border: 1px solid var(--branding-success);
+}
+
+.categories-card .card:hover h5 {
+    color: var(--branding-success);
+
+}
+
+/* ===========popular-product-part================= */
+.popular-product-sec h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.popular-product-sec a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--branding-success);
+    text-decoration: none;
+}
+
+/* ==========website-overall- card -design=============== */
+.card {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    width: 264px;
+    height: 327px;
+    background: var(--gray-scale-white);
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    border-radius: 4px;
+    padding: 3px 8px;
+    width: 80px;
+    height: 27px;
+    background: var(--branding-error);
+}
+
+.card .product-img {
+    width: 264px;
+    height: 240px;
+}
+
+.card .card-body p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-700);
+}
+
+.card .card-body .new-price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.card-body .old-price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: line-through;
+    color: var(--gray-scale-gray-–-400);
+}
+
+.card .whishlist {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    fill: var(--gray-scale-gray-–-50);
+}
+
+.card .whishlist {
+    width: 24px;
+    height: 24px;
+}
+
+.card .whishlist svg path {
+    stroke-width: 1.30px;
+}
+
+.card:hover {
+    border: 1px solid var(--branding-success-dark);
+    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+    background: var(--gray-scale-white);
+}
+
+.card:hover p {
+    color: var(--branding-success);
+}
+
+/* ================ hot-deals-part-css=========================*/
+.hot-deals-part {
+    background: #f7f7f7;
+    position: relative;
+}
+
+.hot-deals-part .card{
+    cursor: pointer;
+}
+.hot-deals-part .preveiw {
+    height: 100%;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hot-deals-part .preveiw.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+.preveiw .card {
+    border: 1px solid var(--branding-success-dark);
+    width: 528px;
+    height: 654px;
+    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+    background: var(--gray-scale-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preveiw .next-product {
+    position: absolute;
+    top: 50%;
+    color: var(--branding-success);
+    background-color: var(--branding-success);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+ .close-preveiw {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: var(--branding-success);
+    background-color: var(--branding-success);
+    border-radius: 50%;
+   
+}
+
+.preveiw .next-product svg {
+    width: 60px;
+    height: 60px;
+    color: var(--gray-scale-gray-–-50);
+}
+
+.icon-btn-add-to-cart {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    fill: var(--gray-scale-gray-–-50);
+}
+
+.add-to-cart-link {
+    border-radius: 43px;
+    padding: 14px 32px;
+    width: 371px;
+    height: 45px;
+    background: var(--branding-success);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    text-decoration: none;
+}
+
+.preveiw .card img {
+    width: 525px;
+    height: 446px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.preveiw .card-body p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--branding-success-dark);
+}
+
+.preveiw .card-body .new-price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.preveiw .card-body .old-price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-decoration: line-through;
+    color: var(--gray-scale-gray-–-400);
+}

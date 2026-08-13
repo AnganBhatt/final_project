@@ -31,6 +31,7 @@
     --branding-success-dark: #2c742f;
     --branding-warning: #ff8a00;
     --branding-error: #ea4b48;
+    --font-family: 'Poppins', sans-serif;
 }
 
 /* ============header-csss===================== */
@@ -279,28 +280,96 @@
     color: var(--branding-success);
 }
 
+/* ============================discount-differnt-product-part======================== */
+.discount-card {
+    border-radius: 8px;
+    width: 424px;
+    height: 536px;
+    position: relative;
+}
+
+.discount-card .discount-img {
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.discount-card .discount-text {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discount-card p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+
+.discount-card h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+
+.discount-card a {
+    display: block;
+    border-radius: 43px;
+    padding: 14px 32px;
+    width: 162px;
+    height: 45px;
+    background: var(--gray-scale-white);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: justify;
+    color: var(--branding-success);
+    text-decoration: none;
+    text-align: center;
+}
+
+.diff p {
+    color: var(--gray-scale-gray-–-900);
+}
+
+.diff h5 {
+    color: var(--gray-scale-gray-–-900);
+}
+
 /* ================ hot-deals-part-css=========================*/
 .hot-deals-part {
     background: #f7f7f7;
     position: relative;
 }
 
-.hot-deals-part .card{
+.hot-deals-part .card {
     cursor: pointer;
 }
+
 .hot-deals-part .preveiw {
     height: 100%;
     position: absolute;
     backdrop-filter: blur(4px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
     width: 100%;
     visibility: hidden;
     opacity: 0;
 }
 
-.hot-deals-part .preveiw.show{
+.hot-deals-part .preveiw.show {
     visibility: visible;
     opacity: 1;
 }
@@ -325,14 +394,19 @@
     margin-left: 10px;
 }
 
- .close-preveiw {
+.close-preview {
     position: absolute;
     top: 0;
     right: 10px;
-    color: var(--branding-success);
+    color: var(--gray-scale-gray-–-100);
     background-color: var(--branding-success);
     border-radius: 50%;
-   
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .preveiw .next-product svg {

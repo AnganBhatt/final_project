@@ -1,22 +1,23 @@
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
     * {
-             overflow-x: hidden;
+
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+              overflow-x: hidden;
     }
 
-        html,
-          body {
+    html,
+    body {
         overflow-x: hidden;
-        width: 100%;
-    }
+        max-width: 100%;
 
-     .container{
+
+    }
+    .container{
         width: 100%;
         padding: 0;
         margin: 0;
-         overflow-x: hidden;
     }
     /* ===============header-csss============== */
     .head-top {
@@ -44,7 +45,7 @@
 
 
     .categories-card .card {
-        width: 165px;
+        width: 120px;
         height: 163px;
     }
 
@@ -151,7 +152,8 @@
 
     }
 }
-/* ============ hover শ ============ */
+
+/* ============ hover শুধু মাউস-ডিভাইসে (মোবাইল/টাচে বন্ধ) ============ */
 @media (hover: hover) and (pointer: fine) {
 
     .categories-card .card:hover {

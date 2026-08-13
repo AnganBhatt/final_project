@@ -1,0 +1,149 @@
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0 10px;
+
+            overflow-x: hidden;
+            max-width: 100%;
+
+    
+    }
+
+    /* ===============header-csss============== */
+    .head-top {
+        display: none;
+    }
+
+    /* =====================main======================== */
+
+    .bannar .side-img img {
+        width: 185px;
+        height: 144px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* ====================catagory css==================== */
+    .Categories-head h5 {
+        font-size: 16px;
+    }
+
+    .Categories-head a {
+        font-size: 8px;
+    }
+
+
+
+    .categories-card .card {
+        width: 165px;
+        height: 163px;
+    }
+
+    .categories-card .card {
+        width: 165px;
+        height: 163px;
+        object-fit: cover;
+    }
+
+    .categories-card h5 {
+        font-size: 9px;
+    }
+
+    .categories-card .card:hover {
+        border: 1px solid var(--branding-success);
+    }
+
+    .categories-card .card:hover h5 {
+        color: var(--branding-success);
+
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card .product-img {
+        width: 100%;
+        height: 240px;
+        justify-content: center;
+    }
+
+    /* =======================news-sec======================= */
+    .news h4 {
+        font-size: 16px;
+    }
+
+    .news-cards .card {
+        width: 100%;
+        height: 449px;
+        box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
+
+    }
+
+    .news-cards .card img {
+        width: 100%;
+        height: 324px;
+    }
+
+    /* =======================seasonal-sale======================= */
+    .banner .banner-img {
+        width: 100%;
+        height: 163px;
+    }
+
+    .banner .banner-data {
+
+        top: 0;
+        right: 20px;
+        height: 100%;
+        max-width: 185px;
+    }
+
+    .banner-data small {
+        font-size: 8px;
+    }
+
+    .banner-data h5 {
+        font-size: 12px;
+        color: var(--gray-scale-white);
+    }
+
+    .banner-data span {
+        font-family: var(--font-family);
+        font-weight: 600;
+        color: var(--branding-warning);
+    }
+
+    .banner-data p {
+        font-size: 8px;
+    }
+
+    .banner-data a {
+        display: block;
+        border-radius: 43px;
+        padding: 8px 8px;
+        background: var(--branding-success);
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 120%;
+        color: var(--gray-scale-white);
+        list-style: none;
+        text-align: center;
+    }
+
+
+    /* ==================social-media======================= */
+    .social-cards-box img {
+        width: 165px;
+        height: 163px;
+        margin-bottom: 5px;
+
+    }
+}

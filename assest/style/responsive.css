@@ -11,8 +11,7 @@
     body {
         overflow-x: hidden;
         max-width: 100%;
-
-      paddin:0 10px;
+         padding: 0 10px;
     }
     .container{
         width: 100%;

@@ -394,3 +394,314 @@
     text-decoration: line-through;
     color: var(--gray-scale-gray-–-400);
 }
+
+/* =======================seasonal-sale======================= */
+.banner {
+    position: relative;
+}
+
+.banner .banner-img {
+    width: 100%;
+}
+
+.banner .banner-data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 60px;
+    height: 100%;
+    max-width: 420px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.banner-data small {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--gray-scale-white);
+}
+
+.banner-data h5 {
+    font-family: var(--font-family);
+    font-size: 56px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--gray-scale-white);
+}
+
+.banner-data span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: var(--branding-warning);
+}
+
+.banner-data p {
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+    opacity: 0.7;
+}
+
+.banner-data a {
+    display: block;
+    border-radius: 43px;
+    padding: 16px 40px;
+    width: 192px;
+    height: 51px;
+    background: var(--branding-success);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+    list-style: none;
+    text-align: center;
+}
+
+/* =======================news-sec======================= */
+.news h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.news-cards .card {
+    width: 424px;
+    height: 494px;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+.news-cards .card img {
+    object-fit: contain;
+    overflow: hidden;
+    width: 424px;
+    height: 324px;
+}
+
+.news-cards-icons svg path {
+    stroke-width: 1.20px;
+    stroke: var(--gray-scale-gray-–-300);
+}
+
+.news-cards-icons span p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-700);
+}
+
+.news-cards .card .news_title p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+}
+
+.news-cards .card .news_title a {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--branding-success);
+}
+
+/* ===================client-reveiw-part====================== */
+.clinet-reveiw-part {
+    background: var(--gray-scale-gray-–-50);
+}
+
+.clinet-reveiw-part {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.change-btn .reveiw-btn-design {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--gray-scale-white);
+    width: 48px;
+    height: 48px;
+}
+
+.change-btn .reveiw-btn-design svg {
+    stroke-width: 1.50px;
+    stroke: var(--gray-scale-gray-–-900);
+}
+
+.change-btn .reveiw-btn-design.bg-change {
+    background-color: var(--branding-success);
+
+}
+
+.change-btn .reveiw-btn-design.bg-change svg path {
+    stroke: var(--gray-scale-white);
+}
+/* =============s0cial-media css============ */
+
+.social-cards-box h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.social-cards-box {
+    position: relative;
+}
+
+.social-cards-box img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+
+/* ===========================news-letter-part==================== */
+.news-letter-part {
+    background: #f7f7f7;
+}
+
+.email-sub {
+    position: relative;
+}
+
+.email-sub input {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 46px;
+    padding: 14px 24px;
+    width: 492px;
+    height: 52px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+}
+
+.email-sub span {
+    position: absolute;
+    text-decoration: none;
+    border-radius: 43px;
+    padding: 16px 40px;
+    width: 162px;
+    height: 52px;
+    background: var(--branding-success);
+    top: 0;
+    right: 0;
+
+}
+
+.email-sub span a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--gray-scale-white);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons span {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons span svg path {
+    fill: var(--gray-scale-gray-–-700);
+}
+
+.social-media-icons span:hover {
+    background-color: var(--branding-success);
+    transition: 0.3s ease;
+}
+
+.social-media-icons span:hover svg path {
+    transition: 0.3s ease;
+    fill: var(--gray-scale-white);
+}
+
+/* ====================================================================================footer-css===================================================================== */
+.footer-area {
+    background: var(--gray-scale-gray-–-900);
+}
+
+.footer-area .row p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+}
+
+.footer-area .row a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-white);
+
+}
+
+.footer-area .row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-area .row ul li a {
+    display: block;
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-400);
+    padding: 8px 0;
+}
+
+.footer-area .row ul li a:hover {
+    color: var(--gray-scale-white);
+}
+
+.footer-area hr {
+    box-shadow: 0 -1px 0 0 var(--gray-scale-gray-–-800);
+    background: var(--gray-scale-gray-–-900);
+    padding: 24px 0px;
+    width: 1320px;
+    height: 80px;
+}

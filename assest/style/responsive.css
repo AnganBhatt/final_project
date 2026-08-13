@@ -9,10 +9,13 @@
           body {
         overflow-x: hidden;
         width: 100%;
-
-
     }
 
+     .container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     /* ===============header-csss============== */
     .head-top {
         display: none;

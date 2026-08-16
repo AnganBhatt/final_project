@@ -113,7 +113,6 @@
 .service .container {
     border-radius: 8px;
     padding: 40px;
-    width: 1320px;
     min-height: 128px;
     box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
     background: var(--gray-scale-white);
@@ -157,8 +156,8 @@
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 5px;
     padding: 16px 0px 24px;
-    width: 200px;
-    height: 213px;
+    width: 180px;
+    height: 193px;
     background: var(--gray-scale-white);
 }
 
@@ -283,14 +282,19 @@
 /* ============================discount-differnt-product-part======================== */
 .discount-card {
     border-radius: 8px;
-    width: 424px;
-    height: 536px;
+    width: auto;
+    max-width: 424px;
+    max-height: 536px;
     position: relative;
+    overflow: hidden;
 }
 
 .discount-card .discount-img {
-    object-fit: contain;
-    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    
 }
 
 .discount-card .discount-text {
@@ -490,7 +494,6 @@
     align-items: flex-start;
     text-align: left;
 }
-
 .banner-data small {
     font-family: var(--font-family);
     font-weight: 500;
@@ -500,6 +503,7 @@
     text-transform: uppercase;
     color: var(--gray-scale-white);
 }
+
 
 .banner-data h5 {
     font-family: var(--font-family);
@@ -537,7 +541,7 @@
     font-size: 16px;
     line-height: 120%;
     color: var(--gray-scale-white);
-    list-style: none;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -552,17 +556,18 @@
 }
 
 .news-cards .card {
-    width: 424px;
-    height: 494px;
+    width: auto;
+    height: 493px;
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
-
+    border-radius: 43px;
+    overflow: hidden;
 }
 
 .news-cards .card img {
-    object-fit: contain;
-    overflow: hidden;
-    width: 424px;
-    height: 324px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .news-cards-icons svg path {

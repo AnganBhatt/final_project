@@ -478,5 +478,7 @@ body {
 
     .footer-area .row ul li a:hover {
         color: var(--gray-scale-white);
+         width: 100%;
+    overflow: hidden;
     }
 }

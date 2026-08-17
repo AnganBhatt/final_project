@@ -1,3 +1,4 @@
+// preveiw
 const card_box = Array.from(document.querySelectorAll('.hot-deals-card-box .card'));
 const preview_show = document.querySelector('.preveiw');
 const preveiw_img = document.querySelector('#preveiw-img');
@@ -74,3 +75,23 @@ client_previous_btn.addEventListener('click', function () {
     client_previous_btn.classList.add('bg-change');
 })
 
+// whichlist add remove
+const addcard = Array.from(document.querySelectorAll('.whishlist'));
+const create_card = document.querySelector('.add-to-card-box');
+const create_img = document.querySelector('.add-to-card-img');
+const create_text = document.querySelector('.add-to-card-tex');
+const create_weight = document.querySelector('.add-to-card-weight');
+const add_to_close = document.querySelector('.add-to-card-remove');
+let index_1 = 0
+addcard.forEach((el, i) => {
+    el.addEventListener('click', function (e) {
+        const card = el.closest('.card')
+        index_1 = i;
+        create_img.src = card.querySelector('.product-img').src;
+        create_text.textContent = card.querySelector('p').textContent;
+    });
+})
+
+add_to_close.addEventListener('click', function () {
+   create_card.remove()
+})

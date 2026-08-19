@@ -467,6 +467,9 @@
     .footer-area hr {
         width: 100%;
     }
+    .shopping-icons{
+        display: none;
+    }
 }
 
 /* ==========================footer-area========================= */

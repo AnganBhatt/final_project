@@ -114,6 +114,8 @@
     font-size: 11px;
     line-height: 120%;
     color: var(--gray-scale-gray-–-700);
+    padding: 0;
+    margin: 0;
 }
 
 .header-whishlist-box-data span {
@@ -122,6 +124,8 @@
     font-size: 14px;
     line-height: 100%;
     color: var(--gray-scale-gray-–-900);
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
@@ -937,12 +941,14 @@
 /* =================shop-card==================== */
 .shop-card-box {
     width: calc(25% - 16px);
-    height: 407px;
+    height: auto;
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 8px;
     margin-top: 24px;
     gap: 12px;
+    overflow: hidden;
     position: relative;
+    padding: 0;
 }
 
 .shop-card {
@@ -954,6 +960,10 @@
     width: 100%;
     height: 312px;
     object-fit: cover;
+}
+
+.card-text-box {
+    padding: 0 16px;
 }
 
 .shop-card-img a {
@@ -996,14 +1006,17 @@
     font-size: 14px !important;
     line-height: 150%;
     color: var(--gray-scale-gray-–-700) !important;
+    padding: 0;
+    margin: 0;
 }
 
-.shop-card-box .Price {
+.shop-card-box .price {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 150%;
     color: var(--gray-scale-gray-–-900);
+
 }
 
 .shop-whish-list {
@@ -1019,6 +1032,7 @@
 .rating-star .star {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .shop-card-box:hover {
@@ -1215,6 +1229,95 @@
     font-weight: 400;
 
     user-select: none;
+}
+
+/* =========================================================================================================================
+                                                        About
+=========================================================================================================================== */
+
+/* =================trust==================== */
+.trust-text h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-900);
+    margin-bottom: 16px;
+}
+
+.trust-text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-600);
+    padding: 0;
+    margin-top: 16px;
+}
+
+.trust-img img {
+    width: 716px;
+    height: 492px;
+    object-fit: cover;
+}
+
+/* ===========================trust-detail======================= */
+.trust-detail-card-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0 , 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.trust-human-img {
+    width: 100%;
+    height: 492px;
+}
+
+.human-img {
+    object-fit: contain;
+    width: 100%;
+    height: 492px;
+
+}
+
+.trust-detail-box {
+    width: 312px;
+    height: 72px;
+    background: var(--gray-scale-white);
+    gap: 10px;
+
+}
+
+.trust-detail-box-img {
+    border-radius: 5000px;
+    width: 72px;
+    height: 72px;
+}
+
+.trust-detail-box-img img {
+    object-fit: cover;
+}
+
+.trust-detail-box-text h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+    padding: 0;
+}
+
+.trust-detail-box-text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+    padding: 0;
 }
 
 /* ====================================================================================footer-css===================================================================== */

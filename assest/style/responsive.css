@@ -553,15 +553,33 @@
     }
 
     /* ===========================trust-detail======================= */
-    .trus-main-box{
+    .trus-main-box {
         flex-direction: column;
     }
+
     .trust-human-img {
         order: -1;
     }
+
     .trust-detail-card-box {
         display: block;
         margin-bottom: 35px;
+    }
+
+    .deliver-data {
+        flex-direction: column;
+    }
+
+    .deliver-img-box {
+        order: -1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .deliver-img-box .deliver-img {
+        width: 100%;
+        display: block;
+        object-fit: contain;
     }
 }
 

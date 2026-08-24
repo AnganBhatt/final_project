@@ -1290,11 +1290,8 @@
 }
 
 .trust-detail-box {
-    width: 312px;
-    height: 72px;
     background: var(--gray-scale-white);
     gap: 10px;
-
 }
 
 .trust-detail-box-img {
@@ -1304,7 +1301,10 @@
 }
 
 .trust-detail-box-img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .trust-detail h4 {
@@ -1341,10 +1341,11 @@
     padding: 0;
 }
 
-/* deliver */
-.deliver .container{
+/*======================================== deliver======================== */
+.deliver .container {
     padding: 0;
 }
+
 .deliver h4 {
     font-family: var(--font-family);
     font-weight: 600;
@@ -1372,10 +1373,65 @@
 }
 
 .deliver-img {
-    width: 795px;
-    height: 606px;
+    width: 716px;
+    height: 492px;
+    aspect-ratio: 716 / 492;
     display: block;
     object-fit: contain;
+}
+
+/*====================== team================== */
+.team {
+    background: linear-gradient(180deg, #f2f2f2 0%, #fff 100%);
+}
+
+.team-heading h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.team-heading p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-600);
+}
+
+.team-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.team-cards-box {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    width: 312px;
+    height: 368px;
+    max-width: 100%;
+    padding: 0;
+}
+
+.team-cards-box:hover {
+    box-shadow: 0 20px 48px 0 rgba(0, 38, 3, 0.08);
+    background: var(--gray-scale-white);
+}
+
+.img-team {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.team-card-data {
+    padding: 10px 10px;
 }
 
 /* ====================================================================================footer-css===================================================================== */
@@ -1427,6 +1483,5 @@
     box-shadow: 0 -1px 0 0 var(--gray-scale-gray-–-800);
     background: var(--gray-scale-gray-–-900);
     padding: 24px 0px;
-    width: 1320px;
     height: 80px;
 }

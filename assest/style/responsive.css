@@ -581,6 +581,35 @@
         display: block;
         object-fit: contain;
     }
+
+    /*====================== team================== */
+    .team-heading h4 {
+        font-size: 28px;
+    }
+
+    .team-heading p {
+        font-size: 12px;
+    }
+
+    .team-card-box {
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .team-card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-cards-box {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .img-team {
+        width: 100%;
+    }
 }
 
 /* =========================================================

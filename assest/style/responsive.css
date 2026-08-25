@@ -60,7 +60,7 @@
 
     .card-box {
         width: calc(30% - 0px);
-        /* col-md-4 = 33.33%-এর সমতুল্য */
+
         height: 324px;
     }
 
@@ -155,7 +155,7 @@
     }
 
     .search-input {
-        width: 80%;
+        width: 75%;
     }
 
     main {
@@ -193,7 +193,7 @@
     }
 
     .search-box {
-        width: 95%;
+        width: 80%;
         padding-left: 10%;
         height: 20%;
         height: 100vh;
@@ -208,7 +208,11 @@
     .search-box.show {
         visibility: visible;
     }
-
+    .mobile-close-search{
+        z-index: 11;
+         position: relative;
+         display: block;
+    }
     .mobile-close-search svg {
         width: 25px;
         height: 25px;
@@ -219,6 +223,10 @@
         display: none !important;
         visibility: hidden !important;
         pointer-events: none !important;
+    }
+
+    .shopping-icons {
+        visibility: hidden;
     }
 
     /* ===============header-responsive-css============================= */

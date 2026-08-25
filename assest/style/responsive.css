@@ -610,6 +610,127 @@
     .img-team {
         width: 100%;
     }
+
+    .team-arrow {
+        display: none;
+    }
+
+    /* contact */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    /* Main contact layout */
+    .contact-box {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Left address box */
+    .address-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .address {
+        width: 100%;
+        height: auto;
+        padding: 24px 20px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .address-box hr {
+        width: calc(100% - 40px);
+        height: 1px;
+        margin: 0 auto;
+    }
+
+    /* Contact form */
+    .contact-from {
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Form heading */
+    .contact-from h4 {
+        font-size: 24px;
+    }
+
+    .contact-from p {
+        font-size: 14px;
+    }
+
+    .address-box {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .address {
+        width: 100%;
+        height: auto;
+        min-height: 169px;
+        padding: 24px 20px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    .address-box hr {
+        width: calc(100% - 40px);
+        height: 1px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .address p {
+        font-size: 16px;
+        line-height: 170%;
+        margin: 0;
+    }
+
+    /* First two inputs */
+    .first-from-part {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .first-from-part input {
+        width: 100%;
+        height: 49px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    /* Second form section */
+    .second-from-box {
+        width: 100%;
+    }
+
+    .second-from-box input {
+        width: 100%;
+        height: 49px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    /* Message box */
+    .second-from-box .big {
+        width: 100%;
+        height: 98px;
+        box-sizing: border-box;
+    }
+
+    /* Send button */
+    .second-from-box span {
+        width: 201px;
+        height: 51px;
+        box-sizing: border-box;
+        margin-top: 15px;
+    }
 }
 
 /* =========================================================

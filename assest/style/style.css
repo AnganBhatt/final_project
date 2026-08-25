@@ -1405,15 +1405,16 @@
 
 .team-card-box {
     display: flex;
-    flex-wrap: wrap;
     gap: 12px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .team-cards-box {
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 8px;
-    width: 312px;
-    height: 368px;
+    width: calc(26% - 12px);
+    height: 326px;
     max-width: 100%;
     padding: 0;
 }
@@ -1425,7 +1426,7 @@
 
 .img-team {
     width: 100%;
-    height: 280px;
+    height: 246px;
     object-fit: cover;
     display: block;
 }
@@ -1433,6 +1434,180 @@
 .team-card-data {
     padding: 10px 10px;
 }
+
+.team-card-data h5 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.team-card-data p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+}
+
+.team-arrow {
+    border-radius: 50%;
+    background-color: var(--gray-scale-white);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-left-arrow svg path {
+    stroke-width: 1.50px;
+    stroke: var(--gray-scale-gray-–-900);
+}
+
+/* ===========================contact================================== */
+.contact-box {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-box input {
+    outline: none;
+}
+
+.contact-from input:hover {
+    border: 1px solid var(--branding-success);
+    outline: none;
+}
+/* address */
+.address-box {
+    border-radius: 8px;
+    width: 312px;
+    height: auto;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+    background: var(--gray-scale-white);
+    flex-direction: column;
+}
+
+.address {
+    margin-bottom: 12px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 24px 0;
+    width: 272px;
+    height: 169px;
+}
+
+.address-box hr {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    width: 267px;
+    height: 3px;
+}
+
+.address p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-800);
+}
+
+/* contact-from */
+.contact-from {
+    border-radius: 8px;
+    width: 979px;
+    height: 507px;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+    background: var(--gray-scale-white);
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.contact-from h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.contact-from p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-500);
+}
+
+.first-from-part {
+    display: flex;
+    gap: 15px;
+}
+
+.first-from-part input {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 434px;
+    height: 49px;
+    background: var(--gray-scale-white);
+    margin-bottom: 25px;
+}
+
+.first-from-part ::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--gray-scale-gray-–-600);
+}
+
+.second-from-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-from-box input {
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 884px;
+    height: 49px;
+    margin-bottom: 25px;
+}
+
+.second-from-box .big {
+    border-radius: 6px;
+    padding: 14px 16px;
+    width: 884px;
+    height: 98px;
+}
+
+.second-from-box span {
+    border-radius: 43px;
+    padding: 16px 40px;
+    width: 201px;
+    height: 51px;
+    background: var(--branding-success);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.second-from-box span a {
+    flex-wrap: nowrap;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+}
+
+
 
 /* ====================================================================================footer-css===================================================================== */
 .footer-area {

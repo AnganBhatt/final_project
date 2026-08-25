@@ -95,6 +95,7 @@ addcard.forEach((el, i) => {
 add_to_close.addEventListener('click', function () {
     create_card.remove()
 })
+
 // mobiler-search-bar
 const search_bar_show = document.querySelector('.search-box');
 const search_icon = document.querySelector('.search-icon');

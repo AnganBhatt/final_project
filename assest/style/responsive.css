@@ -183,7 +183,7 @@
         position: fixed;
         background-color: white;
         height: 50px;
-        
+
     }
 
     .bottom-nav-icon-box svg {
@@ -249,7 +249,12 @@
         color: #333;
     }
 
-
+    .add-to-card-offcanvas {
+        display: none !important;
+        opacity: 0;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
 
     /* ---------- Header ---------- */
 
@@ -261,9 +266,7 @@
         display: none;
     }
 
-    .search-box {
-        display: none;
-    }
+
 
     .shopping-icons {
         display: none;

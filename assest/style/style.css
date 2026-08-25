@@ -127,7 +127,9 @@
     padding: 0;
     margin: 0;
 }
-
+.mobile-close-search{
+    display: none;
+}
 .navbar {
     padding: 16px 0;
     width: 100%;

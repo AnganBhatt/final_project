@@ -173,7 +173,9 @@
     .mobile-bottom-nav .container {
         width: 100%;
     }
-
+    .mobile-bottom-nav{
+        display: block;
+    }
     .bottom-nav-icon-box {
         width: 100%;
         display: flex;

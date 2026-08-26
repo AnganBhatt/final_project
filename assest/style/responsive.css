@@ -208,11 +208,13 @@
     .search-box.show {
         visibility: visible;
     }
-    .mobile-close-search{
+
+    .mobile-close-search {
         z-index: 11;
-         position: relative;
-         display: block;
+        position: relative;
+        display: block;
     }
+
     .mobile-close-search svg {
         width: 25px;
         height: 25px;
@@ -583,6 +585,34 @@
 
     .pagination-pages {
         gap: 2px;
+    }
+
+    /* =========================================================================================================================
+                                                        Blogs
+=========================================================================================================================== */
+    .blog-filter-show {
+       display: none !important;
+    
+    }
+
+    .blogs-detail-filter {
+        display: none;
+    }
+
+    .blog-main-box {
+        display: block;
+    }
+
+    .blogs-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .blogs-cards-box {
+        width: 100%;
+        max-width: 100%;
     }
 
     /* =========================================================================================================================

@@ -864,7 +864,7 @@
 .discount-data {
     position: absolute;
     width: 524px;
-    height: 223px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     top: 67px;
@@ -890,7 +890,6 @@
     background: var(--branding-warning);
     display: flex;
     flex-direction: column;
-    top: 57px;
     right: 65px;
 }
 

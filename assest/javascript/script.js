@@ -299,5 +299,25 @@ if (
         search_bar_show.classList.remove('show');
 
     });
-
 }
+// password
+const password = document.querySelector('.password');
+const show_btn = document.querySelector('.pass-btn-1');
+const hide_btn = document.querySelector('.pass-btn-2');
+
+show_btn.addEventListener('click', function () {
+
+    password.type = "text";
+    show_btn.classList.add('active');
+    hide_btn.classList.add('active');
+
+});
+
+hide_btn.addEventListener('click', function () {
+
+    password.type = "password";
+
+    hide_btn.classList.remove('active');
+    show_btn.classList.remove('active');
+
+});

@@ -424,12 +424,15 @@
         color: var(--gray-scale-white);
         text-align: center;
     }
-    .selecttion-part{
+
+    .selecttion-part {
         display: none;
     }
-    .product-filter{
+
+    .product-filter {
         display: none;
     }
+
     /* =========================discount-card============== */
     .discount-card {
         width: 100%;
@@ -857,9 +860,52 @@
         box-sizing: border-box;
         margin-top: 15px;
     }
-    /* mobile-bottom-nav */
-    .mobile-bottom-nav{
-        display: block;
+
+    /* =============singup================= */
+
+    .singup,
+    .singup .container {
+        min-height: 100vh;
+    }
+
+    .singup .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .siginup-card {
+        height: auto;
+        min-height: 371px;
+        padding: 24px 16px 28px;
+    }
+
+    .siginup-card h4 {
+        font-size: 28px;
+    }
+
+    /* Email input */
+    .siginup-card>.siginup-from>input {
+        width: 94%;
+    }
+
+    /* Password input + icon */
+    .password-box {
+        position: relative;
+        width: 94%;
+    }
+
+    .password-box .password {
+        width: 100%;
+    }
+
+    /* Remember + forgot password */
+    .remeber {
+        width: 94%;
+    }
+
+    /* Login button */
+    .Login {
+        width: 94%;
     }
 }
 

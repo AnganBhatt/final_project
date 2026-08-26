@@ -857,6 +857,10 @@
         box-sizing: border-box;
         margin-top: 15px;
     }
+    /* mobile-bottom-nav */
+    .mobile-bottom-nav{
+        display: block;
+    }
 }
 
 /* =========================================================

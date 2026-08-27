@@ -173,9 +173,11 @@
     .mobile-bottom-nav .container {
         width: 100%;
     }
-    .mobile-bottom-nav{
+
+    .mobile-bottom-nav {
         display: block;
     }
+
     .bottom-nav-icon-box {
         width: 100%;
         display: flex;
@@ -871,43 +873,33 @@
     }
 
     .singup .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        width: 100%;
+        padding: 0 5px;
     }
 
     .siginup-card {
-        height: auto;
-        min-height: 371px;
-        padding: 24px 16px 28px;
+        width: 100%;
     }
 
     .siginup-card h4 {
         font-size: 28px;
     }
-
-    /* Email input */
-    .siginup-card>.siginup-from>input {
-        width: 94%;
+    .remeber p{
+        font-size: 12px;
     }
-
-    /* Password input + icon */
-    .password-box {
-        position: relative;
-        width: 94%;
-    }
-
-    .password-box .password {
+    .siginup-from{
         width: 100%;
     }
-
-    /* Remember + forgot password */
-    .remeber {
-        width: 94%;
+    /* Email input */
+    .siginup-card input {
+        width: 100%;
+        padding: 0;
     }
 
     /* Login button */
     .Login {
-        width: 94%;
+        width: 90%;
+        
     }
 }
 

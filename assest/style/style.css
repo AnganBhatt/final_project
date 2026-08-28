@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 :root {
     --gren-gray-scale-900: #002603;
     --gren-gray-scale-800: #173b1a;
@@ -265,95 +271,46 @@
     text-decoration: none;
 }
 
-/* ==========website-overall- card -design=============== */
-.card {
-    border: 1px solid var(--gray-scale-gray-–-100);
-    width: 264px;
-    height: 327px;
-    background: var(--gray-scale-white);
-    position: relative;
-}
-
-.discount {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--gray-scale-white);
-    border-radius: 4px;
-    padding: 3px 8px;
-    width: 80px;
-    height: 27px;
-    background: var(--branding-error);
-}
-
-.card .product-img {
-    width: 264px;
-    height: 240px;
-}
-
-.card .card-body p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--gray-scale-gray-–-700);
-}
-
-.card .card-body .new-price {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: var(--gray-scale-gray-–-900);
-}
-
-.card-body .old-price {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-decoration: line-through;
-    color: var(--gray-scale-gray-–-400);
-}
-
-.card .whishlist {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    fill: var(--gray-scale-gray-–-50);
-}
-
-.card .whishlist {
-    width: 24px;
-    height: 24px;
-}
-
-.card .whishlist svg path {
-    stroke-width: 1.30px;
-}
-
-.card:hover {
-    border: 1px solid var(--branding-success-dark);
-    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
-    background: var(--gray-scale-white);
-}
-
-.card:hover p {
-    color: var(--branding-success);
-}
-
 /* ============================discount-differnt-product-part======================== */
+.discount-card_box {
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discount-offer-time {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.discount-offer-time span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+
+.discount-offer-time p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .discount-card {
     border-radius: 8px;
-    width: auto;
-    max-width: 424px;
+    width: calc(33% - 5px);
     max-height: 536px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .discount-card .discount-img {
@@ -384,6 +341,47 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--gray-scale-white);
+}
+
+.diff-1 p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-white);
+}
+
+.diff-1 p small {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--branding-warning);
+}
+
+.diff-2 p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.diff-2 p small {
+    border-radius: 5px;
+    padding: 6px 12px;
+    width: 100px;
+    height: 39px;
+    background: var(--gray-scale-gray-–-900);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #fcc900;
 }
 
 .discount-card h5 {
@@ -423,122 +421,16 @@
 /* ================ hot-deals-part-css=========================*/
 .hot-deals-part {
     background: #f7f7f7;
-    position: relative;
 }
 
-.hot-deals-part .card {
-    cursor: pointer;
-}
-
-.hot-deals-part .preveiw {
-    height: 100%;
-    position: absolute;
-    backdrop-filter: blur(4px);
-    inset: 0;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.hot-deals-part .preveiw.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-.preveiw .card {
-    border: 1px solid var(--branding-success-dark);
-    width: 528px;
-    height: 654px;
-    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
-    background: var(--gray-scale-white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.preveiw .next-product {
-    position: absolute;
-    top: 50%;
-    color: var(--branding-success);
-    background-color: var(--branding-success);
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-.close-preview {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    color: var(--gray-scale-gray-–-100);
-    background-color: var(--branding-success);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.preveiw .next-product svg {
-    width: 60px;
-    height: 60px;
-    color: var(--gray-scale-gray-–-50);
-}
-
-.icon-btn-add-to-cart {
-    width: 46px;
-    height: 46px;
-    border-radius: 100%;
-    fill: var(--gray-scale-gray-–-50);
-}
-
-.add-to-cart-link {
-    border-radius: 43px;
-    padding: 14px 32px;
-    width: 371px;
-    height: 45px;
-    background: var(--branding-success);
+.hot-deals-head h5 {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 32px;
     line-height: 120%;
-    color: var(--gray-scale-white);
-    text-decoration: none;
-}
-
-.preveiw .card img {
-    width: 525px;
-    height: 446px;
-    object-fit: contain;
-    overflow: hidden;
-}
-
-.preveiw .card-body p {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--branding-success-dark);
-}
-
-.preveiw .card-body .new-price {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 150%;
     color: var(--gray-scale-gray-–-900);
 }
 
-.preveiw .card-body .old-price {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 150%;
-    text-decoration: line-through;
-    color: var(--gray-scale-gray-–-400);
-}
 
 /* =======================seasonal-sale======================= */
 .banner {
@@ -708,7 +600,7 @@
 
 /* =============s0cial-media css============ */
 
-.social-cards-box h5 {
+.social-media-post h5 {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 32px;
@@ -950,9 +842,38 @@
     color: var(--gray-scale-white);
 }
 
+.shop-timer {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    text-align: center;
+}
+
+.shop-timer span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--branding-success);
+
+}
+
+.shop-timer p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--gray-scale-white);
+    opacity: 0.5;
+}
+
 /* =================shop-card==================== */
 .shop-card-box {
-    width: calc(25% - 16px);
+    width: calc(25% - 5px);
     height: auto;
     border: 1px solid var(--gray-scale-gray-–-100);
     border-radius: 8px;
@@ -961,11 +882,13 @@
     overflow: hidden;
     position: relative;
     padding: 0;
+    background: var(--gray-scale-white);
 }
 
 .shop-card {
     width: 100%;
     height: 100%;
+    background: var(--gray-scale-white);
 }
 
 .shop-card-img {
@@ -1015,9 +938,9 @@
 .shop-card-box p {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 14px !important;
+    font-size: 14px;
     line-height: 150%;
-    color: var(--gray-scale-gray-–-700) !important;
+    color: var(--gray-scale-gray-–-700);
     padding: 0;
     margin: 0;
 }
@@ -1025,7 +948,7 @@
 .shop-card-box .price {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px !important;
+    font-size: 16px;
     line-height: 150%;
     color: var(--gray-scale-gray-–-900);
 
@@ -1308,7 +1231,9 @@
     width: 424px;
     height: auto;
 }
-
+.cate-data {
+    margin-bottom: 16px;
+}
 .blogs-cards {
     width: 872px;
 }
@@ -1414,6 +1339,7 @@
     line-height: 150%;
     color: var(--gray-scale-gray-–-900);
     padding: 0;
+    margin: 0;
 
 }
 
@@ -1452,6 +1378,41 @@
     width: 100%;
     height: 324px;
     overflow: hidden;
+    position: relative;
+}
+
+.bolgs_date_box {
+    position: absolute;
+    border-radius: 4px;
+    padding: 6px 15px 10px;
+    width: 58px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.85);
+    bottom: 24px;
+    left: 24px;
+}
+
+.bolgs_date_box p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+    padding: 0;
+    margin: 0;
+}
+
+.bolgs_date_box span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    color: var(--gray-scale-gray-–-500);
 }
 
 .b-c-i {
@@ -1463,7 +1424,10 @@
 .blogs-big-cards-text {
     padding: 24px 24px;
 }
-
+.blogs-card-level{
+    display: flex;
+    gap: 16px;
+}
 .blogs-card-level span {
     font-family: var(--font-family);
     font-weight: 400;
@@ -1495,7 +1459,7 @@
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.08);
 }
 
-.blogs-big-cards:hover p {
+.blogs-big-cards:hover .text p {
     color: var(--branding-success-dark);
 }
 
@@ -2087,6 +2051,6 @@
 .footer-area hr {
     box-shadow: 0 -1px 0 0 var(--gray-scale-gray-–-800);
     background: var(--gray-scale-gray-–-900);
-    padding: 24px 0px;
-    height: 80px;
+    padding: 0;
+    height: 2px;
 }

@@ -72,10 +72,13 @@
 
 
     /* ============================discount-differnt-product-part======================== */
-    .discount-card {
-        flex: 1 1 calc(40% - 40px);
-        width: calc(38% - 40px);
+
+    .discount-card_box {
+        display: flex;
+        flex-direction: column !important;
     }
+
+   
 
     .discount-card .discount-img {
         object-fit: cover;
@@ -139,7 +142,9 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+    .container{
+        width: 100%;
+    }
     body {
         width: 100%;
         overflow-x: hidden;
@@ -884,12 +889,15 @@
     .siginup-card h4 {
         font-size: 28px;
     }
-    .remeber p{
+
+    .remeber p {
         font-size: 12px;
     }
-    .siginup-from{
+
+    .siginup-from {
         width: 100%;
     }
+
     /* Email input */
     .siginup-card input {
         width: 100%;
@@ -899,7 +907,7 @@
     /* Login button */
     .Login {
         width: 90%;
-        
+
     }
 }
 

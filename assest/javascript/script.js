@@ -1,155 +1,3 @@
-// ============================================================
-//                    PRODUCT PREVIEW
-// ============================================================
-
-const card_box = Array.from(
-    document.querySelectorAll('.hot-deals-card-box .card')
-);
-
-const preview_show = document.querySelector('.preveiw');
-const preveiw_img = document.querySelector('#preveiw-img');
-const preveiw_text = document.querySelector('.preveiw-text');
-const preveiw_discount = document.querySelector('#preveiw-discount');
-const preveiw_new_pric = document.querySelector('.preveiw-new-price');
-const preveiw_old_price = document.querySelector('.preveiw-old-price');
-
-const next_btn = document.querySelector('.next-product');
-const close_btn = document.querySelector('.close-preview');
-
-let index = 0;
-
-
-// Only run preview code if preview exists on the page
-if (
-    preview_show &&
-    preveiw_img &&
-    preveiw_text &&
-    preveiw_new_pric &&
-    preveiw_old_price &&
-    next_btn &&
-    close_btn
-) {
-
-    // -----------------------------
-    // Show product preview
-    // -----------------------------
-
-    card_box.forEach((el, i) => {
-
-        el.addEventListener('click', function () {
-
-            preview_show.classList.add('show');
-
-            index = i;
-
-            const productImg = el.querySelector('.product-img');
-            const productText = el.querySelector('p');
-            const newPrice = el.querySelector('.new-price');
-            const oldPrice = el.querySelector('.old-price');
-            const discount = el.querySelector('.discount');
-
-            if (productImg) {
-                preveiw_img.src = productImg.src;
-            }
-
-            if (productText) {
-                preveiw_text.textContent = productText.textContent;
-            }
-
-            if (newPrice) {
-                preveiw_new_pric.textContent = newPrice.textContent;
-            }
-
-            if (oldPrice) {
-                preveiw_old_price.textContent = oldPrice.textContent;
-            } else {
-                preveiw_old_price.textContent = '';
-            }
-
-            if (discount && preveiw_discount) {
-                preveiw_discount.textContent = discount.textContent;
-            } else if (preveiw_discount) {
-                preveiw_discount.textContent = '';
-            }
-
-        });
-
-    });
-
-
-    // -----------------------------
-    // Next product
-    // -----------------------------
-
-    next_btn.addEventListener('click', function () {
-
-        if (card_box.length === 0) {
-            return;
-        }
-
-        index++;
-
-        if (index >= card_box.length) {
-            index = 0;
-        }
-
-        const currentCard = card_box[index];
-
-        const productImg =
-            currentCard.querySelector('.product-img');
-
-        const productText =
-            currentCard.querySelector('p');
-
-        const newPrice =
-            currentCard.querySelector('.new-price');
-
-        const oldPrice =
-            currentCard.querySelector('.old-price');
-
-        const discount =
-            currentCard.querySelector('.discount');
-
-
-        if (productImg) {
-            preveiw_img.src = productImg.src;
-        }
-
-        if (productText) {
-            preveiw_text.textContent = productText.textContent;
-        }
-
-        if (newPrice) {
-            preveiw_new_pric.textContent = newPrice.textContent;
-        }
-
-        if (oldPrice) {
-            preveiw_old_price.textContent = oldPrice.textContent;
-        } else {
-            preveiw_old_price.textContent = '';
-        }
-
-        if (discount && preveiw_discount) {
-            preveiw_discount.textContent = discount.textContent;
-        } else if (preveiw_discount) {
-            preveiw_discount.textContent = '';
-        }
-
-    });
-
-
-    // -----------------------------
-    // Close preview
-    // -----------------------------
-
-    close_btn.addEventListener('click', function () {
-
-        preview_show.classList.remove('show');
-
-    });
-
-}
-
 
 
 // ============================================================
@@ -300,24 +148,66 @@ if (
 
     });
 }
-// password
-const password = document.querySelector('.password');
-const show_btn = document.querySelector('.pass-btn-1');
-const hide_btn = document.querySelector('.pass-btn-2');
 
-show_btn.addEventListener('click', function () {
+// ============================================================
+//                    discount-offer-time
+// ============================================================
+const day = document.querySelector('.Days')
+const hour = document.querySelector('.Hours')
+const minute = document.querySelector('.Minutes')
+const second = document.querySelector('.Seconds')
 
-    password.type = "text";
-    show_btn.classList.add('active');
-    hide_btn.classList.add('active');
+const target_day = new Date('December 1 2026 00:00:00').getTime()
 
-});
+function timer() {
+    const present_timer = new Date().getTime()
+    const day_left = target_day - present_timer;
 
-hide_btn.addEventListener('click', function () {
+    const left_day = Math.floor(day_left / 1000 / 60 / 60 / 24);
+    const left_hour = Math.floor(day_left / 1000 / 60 / 60) % 24;
+    const left_minute = Math.floor(day_left / 1000 / 60) % 60;
+    const left_second = Math.floor(day_left / 1000) % 60
 
-    password.type = "password";
+    day.innerHTML = left_day;
+    hour.innerHTML = left_hour;
+    minute.innerHTML = left_minute;
+    second.innerHTML = left_second;
+}
+setInterval(timer, 1000)
 
-    hide_btn.classList.remove('active');
-    show_btn.classList.remove('active');
 
-});
+
+
+
+// shop timer
+const shop_day = document.querySelector('.shop_days');
+const shop_hour = document.querySelector('.shop_hours');
+const shop_minute = document.querySelector('.shop_minutes');
+const shop_second = document.querySelector('.shop_seconds');
+
+const target_time = new Date('November 1 2026 00:00:00').getTime();
+
+function shop_timer() {
+    const shop_present_time = new Date().getTime();
+    const time_difference = target_time - shop_present_time;
+
+    const days_left = Math.floor(time_difference / 1000 / 60 / 60 / 24);
+    const hour_left = Math.floor(time_difference / 1000 / 60 / 60) % 24;
+    const minute_left = Math.floor(time_difference / 1000 / 60) % 60;
+    const second_left = Math.floor(time_difference / 1000) % 60;
+
+    console.log(days_left, hour_left, minute_left, second_left)
+    shop_day.innerHTML = days_left;
+    shop_hour.innerHTML = hour_left;
+    shop_minute.innerHTML = minute_left;
+    shop_second.innerHTML = second_left;
+    if (time_difference <= 0) {
+        shop_day.innerHTML = "00";
+        shop_hour.innerHTML = "00";
+        shop_minute.innerHTML = "00";
+        shop_second.innerHTML = "00";
+        clearInterval(shop_time);
+    }
+}
+
+ const shop_time = setInterval(shop_timer, 1000);

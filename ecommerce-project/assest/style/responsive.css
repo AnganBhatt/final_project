@@ -1,28 +1,4 @@
 /* =========================================================
-   GLOBAL RESET
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-
-/* =========================================================
-   DESKTOP / LARGE / XL
-   > 1024px
-========================================================= */
-
-/* তোমার existing desktop CSS এখানে থাকবে */
-
-
-/* =========================================================
    TABLET
    579px - 1024px
 ========================================================= */
@@ -84,7 +60,7 @@ body {
 
     .card-box {
         width: calc(30% - 0px);
-        /* col-md-4 = 33.33%-এর সমতুল্য */
+
         height: 324px;
     }
 
@@ -93,14 +69,26 @@ body {
         height: auto;
     }
 
+    .hot_deals_product_box {
+        display: grid;
+        grid-template-columns: repeat(2, 2.5fr);
+        gap: 4px;
+        padding: 0;
+    }
 
+    .big-card {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 
     /* ============================discount-differnt-product-part======================== */
-    .discount-card {
-        flex: 1 1 calc(40% - 40px);
-        width: calc(38% - 40px);
-        height: ;
+
+    .discount-card_box {
+        display: flex;
+        flex-direction: column !important;
     }
+
+
 
     .discount-card .discount-img {
         object-fit: cover;
@@ -157,7 +145,35 @@ body {
    ========================================================= */
 
 @media screen and (max-width: 578px) {
+
     /* ---------- General ---------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        overflow-x: hidden;
+    }
+
+    .search-input {
+        width: 75%;
+    }
 
     main {
         padding: 0 10px;
@@ -168,6 +184,72 @@ body {
         max-width: 100%;
         padding: 0;
         margin: 0;
+    }
+
+    /* mobile-botto-nav */
+    .mobile-bottom-nav .container {
+        width: 100%;
+    }
+
+    .mobile-bottom-nav {
+        display: block;
+    }
+
+    .bottom-nav-icon-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 0;
+        position: fixed;
+        background-color: white;
+        height: 50px;
+
+    }
+
+    .bottom-nav-icon-box svg {
+        color: var(--gray-scale-gray-–-900);
+        width: 30px;
+        height: 30px;
+    }
+
+    .search-box {
+        width: 80%;
+        padding-left: 10%;
+        height: 20%;
+        height: 100vh;
+        z-index: 10;
+        position: fixed;
+        top: 25px;
+        width: 100%;
+        backdrop-filter: blur(4px);
+        visibility: hidden;
+    }
+
+    .search-box.show {
+        visibility: visible;
+    }
+
+    .mobile-close-search {
+        z-index: 11;
+        position: relative;
+        display: block;
+    }
+
+    .mobile-close-search svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .hot-deals-part .preveiw,
+    .hot-deals-part .preveiw.show {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+
+    .shopping-icons {
+        visibility: hidden;
     }
 
     /* ===============header-responsive-css============================= */
@@ -204,10 +286,11 @@ body {
         color: #333;
     }
 
-    .search-box {
-        width: 95%;
-        padding-left: 10%;
-        height: 20%;
+    .add-to-card-offcanvas {
+        display: none !important;
+        opacity: 0;
+        display: none !important;
+        pointer-events: none !important;
     }
 
     /* ---------- Header ---------- */
@@ -220,9 +303,7 @@ body {
         display: none;
     }
 
-    .search-box {
-        display: none;
-    }
+
 
     .shopping-icons {
         display: none;
@@ -279,14 +360,15 @@ body {
 
     .card-box {
         display: flex;
-        flex: 1 1 (50% - 20px);
-        width: calc(50% - 5px);
+        flex: 1 1 calc(50% - 20px);
+        width: calc(50% - 10px);
         height: 268px;
         margin: 35px 0;
     }
 
     .card .product-img {
         width: 100%;
+        max-width: 100%;
         height: 180px;
         object-fit: contain;
     }
@@ -364,12 +446,52 @@ body {
         text-align: center;
     }
 
+    .selecttion-part {
+        display: none;
+    }
+
+    .product-filter {
+        display: none;
+    }
+
     /* =========================discount-card============== */
     .discount-card {
-        width: 95%;
-        height: 75%;
+        width: 100%;
+        height: auto;
         display: block;
         margin: 10px 0;
+    }
+
+    .discount-data {
+        width: 100%;
+        top: 15px;
+        padding: 0;
+        height: auto;
+        left: 15px;
+        box-sizing: border-box;
+    }
+
+    .discount-banner {
+        overflow-y: hidden !important;
+        padding: 0 !important;
+    }
+
+    .discount-banner-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .discount-data h4 {
+        font-size: 18px;
+    }
+
+    .shop-now {
+        width: 135px;
+        height: 40px;
+    }
+
+    .shop-now a {
+        font-size: 10px;
     }
 
     .discount-card p {
@@ -383,6 +505,22 @@ body {
     .banner-data a {
         width: 75px;
         height: 25px;
+    }
+
+    .banner-discount {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .banner-discount :nth-child(1) {
+        font-size: 16px;
+    }
+
+    /* hotdeals */
+    .hot_deals_product_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
     }
 
     /* =======================seasonal-sale======================= */
@@ -408,6 +546,11 @@ body {
     }
 
     .email-sub {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .email-sub {
         left: 0;
     }
 
@@ -415,7 +558,17 @@ body {
         width: 85%;
     }
 
+    .email-sub input {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 
+    .email-sub span {
+        width: auto;
+        max-width: 40%;
+        right: 0;
+    }
 
     .news-letter-part .social-media-icons {
         display: flex;
@@ -423,13 +576,381 @@ body {
         gap: 10px;
         margin-top: 10px;
     }
-}
 
-/* ==========================footer-area========================= */
-.footer-area .container {
-    padding-left: 15px;
-    width: 100%;
-    overflow-x: hidden;
+    .row {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /*===================================shop-css=====================================*/
+    .shop-card-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .shop-card-sec .container {
+        padding: 0 10px;
+    }
+
+    .footer-area .container {
+        padding-left: 15px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .footer-area hr {
+        width: 100%;
+    }
+
+    .shopping-icons {
+        display: none;
+    }
+
+    .discount-banner img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .discount-data {
+        padding: 0 px;
+        width: 225px;
+        height: 150px;
+    }
+
+    .shop-now {
+        font-size: 12px;
+    }
+
+    .banner-discount {
+        width: 80px;
+        height: 60px;
+    }
+
+    .banner-discount :nth-child(1) {
+        font-size: 12px;
+    }
+
+    .banner-discount :nth-child(2) {
+        font-size: 8px;
+    }
+
+    .shop-filter {
+        display: block !important;
+    }
+
+    /* =================selecttion-part=============== */
+    .filter {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .filter select {
+        width: 80%;
+        height: 41px;
+        margin-bottom: 20px;
+    }
+
+    .filter select option {
+        font-size: 12px;
+        line-height: 150%;
+        color: var(--gray-scale-gray-–-700);
+    }
+
+    .pagination-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .pagination-pages .page,
+    .pagination-dots {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .shop-pagination {
+        gap: 8px !important;
+    }
+
+    .pagination-pages {
+        gap: 2px;
+    }
+
+    /* =========================================================================================================================
+                                                        Blogs
+=========================================================================================================================== */
+    .blog-filter-show {
+        display: none !important;
+
+    }
+
+    .blogs-detail-filter {
+        display: none;
+    }
+
+    .blog-main-box {
+        display: block;
+    }
+
+    .blogs-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .blogs-cards-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* =========================================================================================================================
+                                                        About
+       =============================================================================================================*/
+    .trust-data-box {
+        flex-direction: column;
+    }
+
+    .trust-img img {
+        order: -1;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .trust-text {
+        order: 1;
+    }
+
+    .trust-text h4 {
+        font-size: 28px;
+    }
+
+    .trust-text p {
+        font-size: 12px;
+    }
+
+    /* ===========================trust-detail======================= */
+    .trus-main-box {
+        flex-direction: column;
+    }
+
+    .trust-human-img {
+        order: -1;
+    }
+
+    .trust-detail-card-box {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .deliver-data {
+        flex-direction: column;
+    }
+
+    .deliver-img-box {
+        order: -1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .deliver-img-box .deliver-img {
+        width: 100%;
+        display: block;
+        object-fit: contain;
+    }
+
+    /*====================== team================== */
+    .team-heading h4 {
+        font-size: 28px;
+    }
+
+    .team-heading p {
+        font-size: 12px;
+    }
+
+    .team-card-box {
+        flex-direction: column;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .team-card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-cards-box {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .img-team {
+        width: 100%;
+    }
+
+    .team-arrow {
+        display: none;
+    }
+
+    /* contact */
+    .contact-box {
+        flex-direction: column;
+    }
+
+    /* Main contact layout */
+    .contact-box {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Left address box */
+    .address-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .address {
+        width: 100%;
+        height: auto;
+        padding: 24px 20px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .address-box hr {
+        width: calc(100% - 40px);
+        height: 1px;
+        margin: 0 auto;
+    }
+
+    /* Contact form */
+    .contact-from {
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Form heading */
+    .contact-from h4 {
+        font-size: 24px;
+    }
+
+    .contact-from p {
+        font-size: 14px;
+    }
+
+    .address-box {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .address {
+        width: 100%;
+        height: auto;
+        min-height: 169px;
+        padding: 24px 20px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    .address-box hr {
+        width: calc(100% - 40px);
+        height: 1px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .address p {
+        font-size: 16px;
+        line-height: 170%;
+        margin: 0;
+    }
+
+    /* First two inputs */
+    .first-from-part {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .first-from-part input {
+        width: 100%;
+        height: 49px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    /* Second form section */
+    .second-from-box {
+        width: 100%;
+    }
+
+    .second-from-box input {
+        width: 100%;
+        height: 49px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    /* Message box */
+    .second-from-box .big {
+        width: 100%;
+        height: 98px;
+        box-sizing: border-box;
+    }
+
+    /* Send button */
+    .second-from-box span {
+        width: 201px;
+        height: 51px;
+        box-sizing: border-box;
+        margin-top: 15px;
+    }
+
+    /* =============singup================= */
+
+    .singup,
+    .singup .container {
+        min-height: 100vh;
+    }
+
+    .singup .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .siginup-card {
+        width: 100%;
+    }
+
+    .siginup-card h4 {
+        font-size: 28px;
+    }
+
+    .remeber p {
+        font-size: 12px;
+    }
+
+    .siginup-from {
+        width: 100%;
+    }
+
+    /* Email input */
+    .siginup-card input {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Login button */
+    .Login {
+        width: 90%;
+
+    }
 }
 
 /* =========================================================

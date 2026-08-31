@@ -811,6 +811,8 @@
     color: var(--gray-scale-gray-–-700);
 }
 
+/* NEWS-CARD */
+
 .news-cards .card .news_title p {
     font-family: var(--font-family);
     font-weight: 500;

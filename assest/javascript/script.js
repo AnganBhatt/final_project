@@ -240,6 +240,7 @@ if (product_cate_filter) {
 // advertise
 // advertise
 
+
 // ==================== ADVERTISE ====================
 let adv_show = document.querySelector('.advertise-part');
 let adv_close = document.querySelector('.adv-close');
@@ -255,4 +256,5 @@ window.addEventListener("load", function () {
 
 adv_close.addEventListener('click', function () {
     adv_show.classList.remove('show');
+    
 });

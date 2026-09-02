@@ -192,6 +192,7 @@
     top: 0;
     visibility: hidden;
     opacity: 0;
+    transition: 0.3s ease;
 }
 .advertise-part.show{ 
     opacity: 1;
@@ -218,6 +219,7 @@
     position: absolute;
     top: 18px;
     right: 18px;
+    cursor: pointer;
 }
 .adv-img img {
     width: 100%;

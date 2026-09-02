@@ -81,6 +81,7 @@
         grid-row: span 2;
     }
 
+
     /* ============================discount-differnt-product-part======================== */
 
     .discount-card_box {
@@ -454,6 +455,37 @@
         display: none;
     }
 
+    /* ======================advertise-part========================== */
+    .adv-box {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .adv-text h4 {
+        font-size: 18px;
+    }
+
+    .adv-text P {
+        font-size: 10px;
+    }
+
+    .add-subscrive input {
+        width: 100%;
+    }
+
+    .add-subscrive button {
+        width: 30%;
+        padding: 0;
+        font-size: 9px;
+       left: 135px;
+    }
+    .add-subscrive input::placeholder{
+        font-size: 10px;
+    }
+    .adv-checkbox span{
+         font-size: 10px;
+    }
     /* =========================discount-card============== */
     .discount-card {
         width: 100%;

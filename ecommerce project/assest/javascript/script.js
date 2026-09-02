@@ -185,28 +185,30 @@ const shop_hour = document.querySelector('.shop_hours');
 const shop_minute = document.querySelector('.shop_minutes');
 const shop_second = document.querySelector('.shop_seconds');
 
-const target_time = new Date('November 1 2026 00:00:00').getTime();
+if (shop_day) {
+    const target_time = new Date('November 1 2026 00:00:00').getTime();
 
-function shop_timer() {
-    const shop_present_time = new Date().getTime();
-    const time_difference = target_time - shop_present_time;
+    function shop_timer() {
+        const shop_present_time = new Date().getTime();
+        const time_difference = target_time - shop_present_time;
 
-    const days_left = Math.floor(time_difference / 1000 / 60 / 60 / 24);
-    const hour_left = Math.floor(time_difference / 1000 / 60 / 60) % 24;
-    const minute_left = Math.floor(time_difference / 1000 / 60) % 60;
-    const second_left = Math.floor(time_difference / 1000) % 60;
+        const days_left = Math.floor(time_difference / 1000 / 60 / 60 / 24);
+        const hour_left = Math.floor(time_difference / 1000 / 60 / 60) % 24;
+        const minute_left = Math.floor(time_difference / 1000 / 60) % 60;
+        const second_left = Math.floor(time_difference / 1000) % 60;
 
-    console.log(days_left, hour_left, minute_left, second_left)
-    shop_day.innerHTML = days_left;
-    shop_hour.innerHTML = hour_left;
-    shop_minute.innerHTML = minute_left;
-    shop_second.innerHTML = second_left;
-    if (time_difference <= 0) {
-        shop_day.innerHTML = "00";
-        shop_hour.innerHTML = "00";
-        shop_minute.innerHTML = "00";
-        shop_second.innerHTML = "00";
-        clearInterval(shop_time);
+        console.log(days_left, hour_left, minute_left, second_left)
+        shop_day.innerHTML = days_left;
+        shop_hour.innerHTML = hour_left;
+        shop_minute.innerHTML = minute_left;
+        shop_second.innerHTML = second_left;
+        if (time_difference <= 0) {
+            shop_day.innerHTML = "00";
+            shop_hour.innerHTML = "00";
+            shop_minute.innerHTML = "00";
+            shop_second.innerHTML = "00";
+            clearInterval(shop_time);
+        }
     }
 }
 
@@ -216,21 +218,41 @@ const shop_time = setInterval(shop_timer, 1000);
 const product_cards = document.querySelectorAll('.shop-card-box');
 
 const product_cate_filter = document.querySelector('.category-filter');
+if (product_cate_filter) {
+    product_cate_filter.addEventListener('change', function () {
 
-product_cate_filter.addEventListener('change', function () {
+        const selected_product_cards = product_cate_filter.value;
 
-    const selected_product_cards = product_cate_filter.value;
+        product_cards.forEach(function (shopcardbox) {
+            if (selected_product_cards === "all") {
+                shopcardbox.style.display = "block";
+            }
+            else if (shopcardbox.dataset.category === selected_product_cards) {
+                shopcardbox.style.display = "block";
+            }
+            else {
+                shopcardbox.style.display = "none";
+            }
+        })
 
-    product_cards.forEach(function (shopcardbox) {
-        if (selected_product_cards === "all") {
-            shopcardbox.style.display = "block";
-        }
-        else if (shopcardbox.dataset.category === selected_product_cards) {
-            shopcardbox.style.display = "block";
-        }
-        else {
-            shopcardbox.style.display = "none";
-        }
     })
+}
+// advertise
+// advertise
 
-})
+// ==================== ADVERTISE ====================
+let adv_show = document.querySelector('.advertise-part');
+let adv_close = document.querySelector('.adv-close');
+console.log('initial adv_show:', adv_show);
+
+window.addEventListener("load", function () {
+    console.log('load fired');
+    setTimeout(() => {
+        console.log('timeout fired, adv_show is:', adv_show);
+        adv_show.classList.add('show');
+    }, 2500);
+});
+
+adv_close.addEventListener('click', function () {
+    adv_show.classList.remove('show');
+});

@@ -156,24 +156,25 @@ const day = document.querySelector('.Days')
 const hour = document.querySelector('.Hours')
 const minute = document.querySelector('.Minutes')
 const second = document.querySelector('.Seconds')
-
-const target_day = new Date('December 1 2026 00:00:00').getTime()
-
-function timer() {
-    const present_timer = new Date().getTime()
-    const day_left = target_day - present_timer;
-
-    const left_day = Math.floor(day_left / 1000 / 60 / 60 / 24);
-    const left_hour = Math.floor(day_left / 1000 / 60 / 60) % 24;
-    const left_minute = Math.floor(day_left / 1000 / 60) % 60;
-    const left_second = Math.floor(day_left / 1000) % 60
-
-    day.innerHTML = left_day;
-    hour.innerHTML = left_hour;
-    minute.innerHTML = left_minute;
-    second.innerHTML = left_second;
+if(day){
+    const target_day = new Date('December 1 2026 00:00:00').getTime()
+    
+    function timer() {
+        const present_timer = new Date().getTime()
+        const day_left = target_day - present_timer;
+    
+        const left_day = Math.floor(day_left / 1000 / 60 / 60 / 24);
+        const left_hour = Math.floor(day_left / 1000 / 60 / 60) % 24;
+        const left_minute = Math.floor(day_left / 1000 / 60) % 60;
+        const left_second = Math.floor(day_left / 1000) % 60
+    
+        day.innerHTML = left_day;
+        hour.innerHTML = left_hour;
+        minute.innerHTML = left_minute;
+        second.innerHTML = left_second;
+    }
+    setInterval(timer, 1000)
 }
-setInterval(timer, 1000)
 
 
 
@@ -244,17 +245,20 @@ if (product_cate_filter) {
 // ==================== ADVERTISE ====================
 let adv_show = document.querySelector('.advertise-part');
 let adv_close = document.querySelector('.adv-close');
-console.log('initial adv_show:', adv_show);
-
-window.addEventListener("load", function () {
-    console.log('load fired');
-    setTimeout(() => {
-        console.log('timeout fired, adv_show is:', adv_show);
-        adv_show.classList.add('show');
-    }, 2500);
-});
-
-adv_close.addEventListener('click', function () {
-    adv_show.classList.remove('show');
+if(adv_show){
+    console.log('initial adv_show:', adv_show);
     
-});
+    window.addEventListener("load", function () {
+        console.log('load fired');
+        setTimeout(() => {
+            console.log('timeout fired, adv_show is:', adv_show);
+            adv_show.classList.add('show');
+        }, 2500);
+    });
+    
+    adv_close.addEventListener('click', function () {
+        adv_show.classList.remove('show');
+        
+    });
+}
+

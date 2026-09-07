@@ -156,18 +156,18 @@ const day = document.querySelector('.Days')
 const hour = document.querySelector('.Hours')
 const minute = document.querySelector('.Minutes')
 const second = document.querySelector('.Seconds')
-if(day){
+if (day) {
     const target_day = new Date('December 1 2026 00:00:00').getTime()
-    
+
     function timer() {
         const present_timer = new Date().getTime()
         const day_left = target_day - present_timer;
-    
+
         const left_day = Math.floor(day_left / 1000 / 60 / 60 / 24);
         const left_hour = Math.floor(day_left / 1000 / 60 / 60) % 24;
         const left_minute = Math.floor(day_left / 1000 / 60) % 60;
         const left_second = Math.floor(day_left / 1000) % 60
-    
+
         day.innerHTML = left_day;
         hour.innerHTML = left_hour;
         minute.innerHTML = left_minute;
@@ -211,10 +211,10 @@ if (shop_day) {
             clearInterval(shop_time);
         }
     }
+    const shop_time = setInterval(shop_timer, 1000);
 }
 
 
-const shop_time = setInterval(shop_timer, 1000);
 
 const product_cards = document.querySelectorAll('.shop-card-box');
 
@@ -245,9 +245,9 @@ if (product_cate_filter) {
 // ==================== ADVERTISE ====================
 let adv_show = document.querySelector('.advertise-part');
 let adv_close = document.querySelector('.adv-close');
-if(adv_show){
+if (adv_show && adv_close) {
     console.log('initial adv_show:', adv_show);
-    
+
     window.addEventListener("load", function () {
         console.log('load fired');
         setTimeout(() => {
@@ -255,10 +255,46 @@ if(adv_show){
             adv_show.classList.add('show');
         }, 2500);
     });
-    
+
     adv_close.addEventListener('click', function () {
         adv_show.classList.remove('show');
-        
+
     });
 }
 
+let thumbails = document.querySelectorAll(".thumbail-imgs img")
+let change_img = document.querySelector('.big-im-box img')
+
+thumbails.forEach((thumb) => {
+    thumb.addEventListener('click', function () {
+        change_img.src = thumb.src;
+        thumbails.forEach((border) => {
+            border.classList.remove('active')
+        })
+        thumb.classList.add('active')
+    })
+    thumbails[0].classList.add('active')
+}
+)
+
+let increment = document.querySelector('.increase');
+let decrement = document.querySelector('.decrease');
+let value = document.querySelector('.ammount');
+let money = document.querySelector('.new-price')
+let baseprice = parseFloat(money.innerText.replace("$",""))
+increment.addEventListener('click', function () {
+    let ammount = parseInt(value.innerText);
+
+    if (ammount < 20) {
+        value.innerText = ammount + 1;
+        money.innerText = baseprice * (ammount + 1)
+    }
+});
+
+decrement.addEventListener('click', function () {
+    let ammount = parseInt(value.innerText);
+    if (ammount > 1) {
+        value.innerText = ammount - 1;
+        money.innerText = baseprice * (ammount - 1)
+    }
+});

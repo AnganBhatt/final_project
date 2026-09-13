@@ -1,5 +1,4 @@
 
-
 // ============================================================
 //                    CLIENT REVIEW
 // ============================================================
@@ -281,7 +280,7 @@ let increment = document.querySelector('.increase');
 let decrement = document.querySelector('.decrease');
 let value = document.querySelector('.ammount');
 let money = document.querySelector('.new-price')
-let baseprice = parseFloat(money.innerText.replace("$",""))
+let baseprice = parseInt(money.innerText.replace("$", ""))
 increment.addEventListener('click', function () {
     let ammount = parseInt(value.innerText);
 
@@ -298,3 +297,11 @@ decrement.addEventListener('click', function () {
         money.innerText = baseprice * (ammount - 1)
     }
 });
+
+let product_detail = document.querySelector('.dept-detail-box ul li');
+product_detail.forEach((detail) => {
+    detail.addEventListener("click", function () {
+
+    })
+})
+

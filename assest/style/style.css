@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 1270px;
+    max-width: 1280px;
     margin: 0 auto;
     width: 100%;
 }
@@ -2978,11 +2978,12 @@
     color: var(--gray-scale-gray-–-900);
 }
 
-.remove-product{
+.remove-product {
     background-color: transparent;
     border: none;
     outline: none;
 }
+
 .product-info {
     display: flex;
     align-items: center;
@@ -3093,6 +3094,127 @@
     color: var(--gray-scale-white);
 }
 
+/* =========================================================================================================================
+                                                   whishlist-csss     
+=========================================================================================================================== */
+.whishlist h4 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.whishlist-table-box {
+    width: 100%;
+    border: 1px solid var(--gray-scale-gray-–-100);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.whishlist-table-box table {
+    width: 100%;
+}
+
+.whishlist-table-box table tr {
+    border-bottom: 1px solid var(--gray-scale-gray-–-100);
+    width: 100%;
+}
+
+
+.whishlist-table-box table thead tr th {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray-scale-gray-–-500);
+    padding: 16px 0;
+}
+
+.whishlist-product {
+    display: flex;
+    align-items: center;
+
+}
+
+.whishlist-product img {
+    display: block;
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.whishlist-product p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-scale-gray-–-900);
+}
+
+.stock {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-success-dark);
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 71px;
+    height: 29px;
+    background: rgba(32, 181, 38, 0.2);
+}
+
+.add-to-cart {
+    font-family: "Poppins", sans-serif;
+    border-radius: 43px;
+    border: none;
+    outline: none;
+    padding: 14px 32px;
+    width: 146px;
+    height: 45px;
+    background: var(--branding-success);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-white);
+}
+
+.out-stock {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--branding-error);
+    background: rgba(234, 75, 72, 0.2);
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 101px;
+    height: 29px;
+}
+
+.out-of-stoc-crt {
+    border: none;
+    outline: none;
+    border-radius: 43px;
+    padding: 14px 32px;
+    width: 146px;
+    height: 45px;
+    background: var(--gray-scale-gray-–-50);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--gray-scale-gray-–-300);
+}
+.share-media{
+    display: flex;
+    align-items: center;
+}
 /* ====================================================================================footer-css===================================================================== */
 .footer-area {
     background: var(--gray-scale-gray-–-900);

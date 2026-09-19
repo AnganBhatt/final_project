@@ -13,10 +13,7 @@
 
     .container {
         width: 100%;
-        max-width: 100%;
     }
-
-
     /* ---------- Header ---------- */
     .bannar .side-img {
         margin-top: 10px;
@@ -58,17 +55,20 @@
 
     /* ---------- Products ---------- */
 
-    .card-box {
-        width: calc(30% - 0px);
-
-        height: 324px;
-    }
 
     .card {
         width: 100%;
         height: auto;
     }
 
+    /* ============================discount-differnt-product-part======================== */
+    .discount-card_box {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 15px;
+    }
+
+    /* hotdeals */
     .hot_deals_product_box {
         display: grid;
         grid-template-columns: repeat(2, 2.5fr);
@@ -81,23 +81,6 @@
         grid-row: span 2;
     }
 
-
-    /* ============================discount-differnt-product-part======================== */
-
-    .discount-card_box {
-        display: flex;
-        flex-direction: column !important;
-    }
-
-
-
-    .discount-card .discount-img {
-        object-fit: cover;
-        width: 100%;
-        display: block;
-        height: auto;
-
-    }
 
     /* ---------- News ---------- */
 
@@ -136,6 +119,57 @@
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    /* =========================================================================================================================
+                                                        shop-css
+=========================================================================================================================== */
+    .shop-card-box p,
+    .shop-card-box .price {
+        font-size: 18px;
+    }
+  /* =========================================================================================================================
+                                                        about
+=========================================================================================================================== */
+
+    /* =========================================================================================================================
+                                                        Blogs
+=========================================================================================================================== */
+    .blog-main-box {
+        width: 100%;
+    }
+
+    .blogs-detail-filter {
+        width: 30%;
+
+    }
+
+    .blogs-cards {
+        width: 70%;
+    }
+
+    .Gallery-img-box {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        gap: 5px;
+    }
+
+    .big-cards-img {
+        height: 200px;
+    }
+
+    .blogs-big-cards-text .text p,
+    .blogs-big-cards-text .text a {
+        font-size: 14px;
+    }
+
+    .blogs-card-level span {
+        font-size: 8px;
+    }
+
+    .blogs-card-text p,
+    .blogs-card-text span {
+        font-size: 12px;
     }
 
     /* =========================================================================================================================
@@ -585,21 +619,7 @@
     }
 
     /* =========================discount-card============== */
-    .discount-card {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 10px 0;
-    }
 
-    .discount-data {
-        width: 100%;
-        top: 15px;
-        padding: 0;
-        height: auto;
-        left: 15px;
-        box-sizing: border-box;
-    }
 
     .discount-banner {
         overflow-y: hidden !important;
@@ -613,15 +633,6 @@
 
     .discount-data h4 {
         font-size: 18px;
-    }
-
-    .shop-now {
-        width: 135px;
-        height: 40px;
-    }
-
-    .shop-now a {
-        font-size: 10px;
     }
 
     .discount-card p {
@@ -730,28 +741,23 @@
     }
 
     .shop-now {
-        height: 30px;
+        height: 40px;
         padding: 0;
     }
 
     .shop-now a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .shop-filter-btn {
         width: 132px;
-     
+
     }
-
-
     .shop-filter select {
         width: 80px !important;
     }
 
-    .shop-card-box {
-        width: 100%;
-        box-sizing: border-box;
-    }
+   
 
     .shop-card-sec .container {
         padding: 0 10px;
@@ -846,12 +852,41 @@
                                                         Blogs
 =========================================================================================================================== */
     .blog-filter-show {
-        display: none !important;
-
+        display: flex;
+        justify-content: space-between;
     }
-   
+
+    .blog-short-filter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-filter-show button {
+        pointer-events: auto;
+    }
+
+    .blog-short-filter select {
+        width: 100% !important;
+    }
+
     .blogs-detail-filter {
         display: none;
+    }
+
+    .offcanvas-data {
+        display: block;
+    }
+
+    .Gallery-img-box {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    .Gallery-img-box img,
+    .blogs-card-img img {
+        width: 100px;
     }
 
     .blog-main-box {

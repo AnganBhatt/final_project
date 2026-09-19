@@ -714,6 +714,40 @@
     }
 
     /*===================================shop-css=====================================*/
+    .discount-data {
+        top: 0px;
+        left: 30px;
+    }
+
+    .discount-data p,
+    .discount-data h4 {
+        font-size: 14px;
+    }
+
+    .shop-timer span,
+    .shop-timer p {
+        font-size: 13px;
+    }
+
+    .shop-now {
+        height: 30px;
+        padding: 0;
+    }
+
+    .shop-now a {
+        font-size: 10px;
+    }
+
+    .shop-filter-btn {
+        width: 132px;
+     
+    }
+
+
+    .shop-filter select {
+        width: 80px !important;
+    }
+
     .shop-card-box {
         width: 100%;
         box-sizing: border-box;
@@ -815,7 +849,7 @@
         display: none !important;
 
     }
-
+   
     .blogs-detail-filter {
         display: none;
     }
